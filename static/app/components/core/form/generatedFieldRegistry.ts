@@ -137,6 +137,20 @@ export const FORM_FIELD_REGISTRY: Record<string, FormFieldDefinition> = {
     label: t('Allowed Origins'),
     hintText: '',
   },
+  'project-replays.sentry:replay_rage_click_issues': {
+    name: 'sentry:replay_rage_click_issues',
+    formId: 'project-replays',
+    route: '/settings/:orgId/projects/:projectId/replays/',
+    label: t('Create Rage Click Issues'),
+    hintText: t('Toggles whether or not to create Session Replay Rage Click Issues'),
+  },
+  'project-replays.sentry:replay_hydration_error_issues': {
+    name: 'sentry:replay_hydration_error_issues',
+    formId: 'project-replays',
+    route: '/settings/:orgId/projects/:projectId/replays/',
+    label: t('Create Hydration Error Issues'),
+    hintText: '',
+  },
   'organization-settings-form.replayAccessMembers': {
     name: 'replayAccessMembers',
     formId: 'organization-settings-form',
